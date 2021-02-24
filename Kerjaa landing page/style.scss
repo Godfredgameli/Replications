@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+$font: Poppins;
+$bold: 600;
+$orange: #F7693E;
+$headings: #2E0838;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    resize: both;
+    outline: 1px solid red;
+}
+body{
+    overflow-x: hidden;
+    font-family: $font;
+    background-color: white;
+    background: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: 130vh;
+    background-position: 55vw -20vh;
+    .main-wrapper{
+        .navbar{
+            height: 70px;
+            padding: 0 5%;
+            button{
+                color: $headings !important; 
+
+            }
+            a{
+                color: $headings;
+                font-weight: $bold;
+            }
+            .navbar-brand{
+                font-size: 24px;
+            }
+
+            .collapse{
+                justify-content: flex-end;
+                ul{
+                    li{
+                        .nav-link{
+                            padding: 10px 5vw;
+                            border-radius: 8px;
+
+                            &:hover, &:focus, &:active{
+                                background-color: $orange;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .legend{
+            height: 80vh;
+            margin: 5%;
+            .left-section{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h1{
+                    width: 86%;
+                    font-size: 50px;
+                    font-weight: 900;
+                    margin-bottom: 30px;
+                    line-height: 1.5;
+                    span{
+                        color: $orange;
+                    }
+                }
+                .description{
+                    width: 70%;
+                    margin-bottom: 30px;
+                }
+                .link{
+                    height: max-content;
+                    a{
+                        padding: 10px 8%;
+                        background-color: $orange;
+                        border-radius: 8px;
+                        color: white;
+
+                        &:hover, &:focus{
+                            text-decoration: none;
+                            filter: opacity(0.7);
+                        }
+                    }
+                }
+
+            }
+            .right-section{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                .image-wrapper{
+                    width: 70%;
+                    height: 60%;
+                    background-color: white;
+                    box-shadow: 0 0 30px 1px rgb(141, 186, 223);
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    position: relative;
+                    padding-top:56.25%;
+                    img{
+                        position: absolute;
+                        width: 100%;
+                        height: auto;
+                        image-rendering: optimizeSpeed;
+                    }
+                }
+            }
+        }
+        .partners{
+            padding: 5%;
+            background-color: #FBFBFB;
+            text-align: center;
+            .content{
+                p{
+                    color: $orange;
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                h2{
+                    color: $headings;
+                    font-weight: $bold;
+                }
+                .sponsors-images{
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    margin-top: 50px;
+                    img{
+                        image-rendering:optimizeSpeed;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
