@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   resize: both;
-  outline: 1px solid red;
 }
 
 body {
@@ -34,7 +33,17 @@ body .main-wrapper .navbar a {
 }
 
 body .main-wrapper .navbar .navbar-brand {
-  font-size: 24px;
+  font-size: 35px;
+  font-weight: 600;
+  position: relative;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+body .main-wrapper .navbar .navbar-brand:hover, body .main-wrapper .navbar .navbar-brand:focus {
+  filter: opacity(0.7);
+  transform: scale(1.5);
 }
 
 body .main-wrapper .navbar .collapse {
@@ -43,12 +52,17 @@ body .main-wrapper .navbar .collapse {
 
 body .main-wrapper .navbar .collapse ul li .nav-link {
   padding: 10px 5vw;
-  border-radius: 8px;
+  border-radius: 10px;
+  position: relative;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
 }
 
 body .main-wrapper .navbar .collapse ul li .nav-link:hover, body .main-wrapper .navbar .collapse ul li .nav-link:focus, body .main-wrapper .navbar .collapse ul li .nav-link:active {
   background-color: #F7693E;
   color: white;
+  bottom: 5px;
 }
 
 body .main-wrapper .legend {
@@ -87,13 +101,19 @@ body .main-wrapper .legend .left-section .link {
 body .main-wrapper .legend .left-section .link a {
   padding: 20px 8%;
   background-color: #F7693E;
-  border-radius: 8px;
+  border-radius: 10px;
   color: white;
+  position: relative;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
 }
 
 body .main-wrapper .legend .left-section .link a:hover, body .main-wrapper .legend .left-section .link a:focus {
   text-decoration: none;
   filter: opacity(0.7);
+  bottom: 5px;
+  color: #2E0838;
 }
 
 body .main-wrapper .legend .right-section {
@@ -106,7 +126,7 @@ body .main-wrapper .legend .right-section .image-wrapper {
   width: 70%;
   height: 60%;
   background-color: white;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -182,12 +202,18 @@ body .main-wrapper .services .right-section .link-text a {
   color: white;
   background-color: #F7693E;
   font-weight: 600;
-  border-radius: 8px;
+  border-radius: 10px;
+  position: relative;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
 }
 
 body .main-wrapper .services .right-section .link-text a:hover, body .main-wrapper .services .right-section .link-text a:focus {
   filter: opacity(0.7);
   text-decoration: none;
+  bottom: 5px;
+  color: #2E0838;
 }
 
 body .main-wrapper .services .right-section h2 {
@@ -232,7 +258,7 @@ body .main-wrapper .workings .works-wrapper {
 }
 
 body .main-wrapper .workings .works-wrapper .middle {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
 }
 
 body .main-wrapper .workings .works-wrapper div {
@@ -309,5 +335,80 @@ body .main-wrapper .tools p a {
 
 body .main-wrapper .tools p a:hover, body .main-wrapper .tools p a:focus {
   filter: opacity(0.7);
+}
+
+body .main-wrapper .special {
+  padding: 5%;
+}
+
+body .main-wrapper .special .left-section {
+  display: flex;
+  align-content: center;
+}
+
+body .main-wrapper .special .left-section img {
+  width: 90%;
+  height: auto;
+}
+
+body .main-wrapper .special .right-section {
+  display: flex;
+  flex-direction: column;
+}
+
+body .main-wrapper .special .right-section h2 {
+  font-weight: 600;
+  color: #2E0838;
+  font-size: 35px;
+  line-height: 1.5;
+  width: 70%;
+  margin: 100px 0 70px 0;
+}
+
+body .main-wrapper .special .right-section p {
+  width: 80%;
+  line-height: 2;
+}
+
+body .main-wrapper .footer {
+  padding: 5%;
+  background-color: #F7693E;
+  color: white;
+}
+
+body .main-wrapper .footer h2 {
+  font-weight: 600;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+body .main-wrapper .footer .endnote {
+  margin-bottom: 30px;
+}
+
+body .main-wrapper .footer .link {
+  margin-top: 50px;
+}
+
+body .main-wrapper .footer .link a {
+  padding: 20px 5%;
+  background-color: white;
+  color: #F7693E;
+  border-radius: 10px;
+  position: relative;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+body .main-wrapper .footer .link a:hover, body .main-wrapper .footer .link a:focus {
+  filter: opacity(0.7);
+  text-decoration: none;
+  bottom: 5px;
+  color: #2E0838;
+}
+
+body .main-wrapper .footer .attribution {
+  margin-top: 100px;
 }
 /*# sourceMappingURL=style.css.map */
