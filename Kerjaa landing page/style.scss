@@ -11,7 +11,7 @@ $color: #979797;
     padding: 0;
     box-sizing: border-box;
     resize: both;
-    // outline: 1px solid red;
+    outline: 1px solid red;
 }
 body{
     font-size: $size;
@@ -235,6 +235,46 @@ body{
                         color: $headings;
                         font-weight: $bold;
                         margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        .tools{
+            padding: 5%;
+            text-align: center;
+            header{
+                margin-bottom: 100px;
+                display: flex;
+                justify-content: center;
+                .heading{
+                    color: $headings;
+                    font-weight: $bold;
+                    width: 30%;
+                }
+            }
+            .tools-wrapper{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                div{
+                    width: 20%;
+                    img{
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+            p{
+                margin-top: 30px;
+                font-weight: $bold;
+                a{
+                    text-decoration: underline;
+                    color: #0062FF;
+
+                    &:hover, &:focus{
+                        filter: opacity(0.7);
                     }
                 }
             }

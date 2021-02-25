@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   resize: both;
+  outline: 1px solid red;
 }
 
 body {
@@ -261,5 +262,52 @@ body .main-wrapper .workings .works-wrapper div h2 {
   color: #2E0838;
   font-weight: 600;
   margin-bottom: 20px;
+}
+
+body .main-wrapper .tools {
+  padding: 5%;
+  text-align: center;
+}
+
+body .main-wrapper .tools header {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+body .main-wrapper .tools header .heading {
+  color: #2E0838;
+  font-weight: 600;
+  width: 30%;
+}
+
+body .main-wrapper .tools .tools-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+body .main-wrapper .tools .tools-wrapper div {
+  width: 20%;
+}
+
+body .main-wrapper .tools .tools-wrapper div img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+body .main-wrapper .tools p {
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+body .main-wrapper .tools p a {
+  text-decoration: underline;
+  color: #0062FF;
+}
+
+body .main-wrapper .tools p a:hover, body .main-wrapper .tools p a:focus {
+  filter: opacity(0.7);
 }
 /*# sourceMappingURL=style.css.map */
