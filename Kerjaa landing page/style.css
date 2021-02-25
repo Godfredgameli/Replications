@@ -8,6 +8,8 @@
 }
 
 body {
+  font-size: 24px;
+  color: #979797;
   overflow-x: hidden;
   font-family: Poppins;
   background-color: white;
@@ -61,6 +63,7 @@ body .main-wrapper .legend .left-section {
 }
 
 body .main-wrapper .legend .left-section h1 {
+  color: #2E0838;
   width: 86%;
   font-size: 50px;
   font-weight: 900;
@@ -82,7 +85,7 @@ body .main-wrapper .legend .left-section .link {
 }
 
 body .main-wrapper .legend .left-section .link a {
-  padding: 10px 8%;
+  padding: 20px 8%;
   background-color: #F7693E;
   border-radius: 8px;
   color: white;
@@ -146,5 +149,77 @@ body .main-wrapper .partners .content .sponsors-images {
 body .main-wrapper .partners .content .sponsors-images img {
   image-rendering: optimizeSpeed;
   margin-top: 20px;
+}
+
+body .main-wrapper .services {
+  padding: 5%;
+}
+
+body .main-wrapper .services .left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body .main-wrapper .services .left-section img {
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+}
+
+body .main-wrapper .services .right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body .main-wrapper .services .right-section .link-text {
+  margin-top: 30px;
+}
+
+body .main-wrapper .services .right-section .link-text a {
+  padding: 20px 10%;
+  color: white;
+  background-color: #F7693E;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+body .main-wrapper .services .right-section .link-text a:hover, body .main-wrapper .services .right-section .link-text a:focus {
+  filter: opacity(0.7);
+  text-decoration: none;
+}
+
+body .main-wrapper .services .right-section h2 {
+  font-weight: 600;
+  font-size: 35px;
+  color: #2E0838;
+  width: 70%;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+body .main-wrapper .services .right-section .intro {
+  font-weight: 600;
+  color: #F7693E;
+  margin-bottom: 30px;
+}
+
+body .main-wrapper .services .right-section .service-description {
+  margin: 30px 0;
+}
+
+body .main-wrapper .workings {
+  padding: 5%;
+}
+
+body .main-wrapper .workings header {
+  text-align: center;
+}
+
+body .main-wrapper .workings header h2 {
+  font-size: 35px;
+  color: #2E0838;
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */
