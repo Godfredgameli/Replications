@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   resize: both;
-  outline: 1px solid red;
 }
 
 body {
@@ -106,7 +105,7 @@ body .main-wrapper .legend .right-section .image-wrapper {
   width: 70%;
   height: 60%;
   background-color: white;
-  box-shadow: 0 0 30px 1px #8dbadf;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -215,11 +214,52 @@ body .main-wrapper .workings {
 
 body .main-wrapper .workings header {
   text-align: center;
+  margin-bottom: 100px;
 }
 
-body .main-wrapper .workings header h2 {
+body .main-wrapper .workings header .heading {
+  margin-top: 20px;
   font-size: 35px;
   color: #2E0838;
   font-weight: 600;
+}
+
+body .main-wrapper .workings .works-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+body .main-wrapper .workings .works-wrapper .middle {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+body .main-wrapper .workings .works-wrapper div {
+  width: 30%;
+  border-radius: 20px;
+  padding: 40px 20px 100px 20px;
+}
+
+body .main-wrapper .workings .works-wrapper div p svg {
+  width: 35px;
+  margin-bottom: 20px;
+}
+
+body .main-wrapper .workings .works-wrapper div p .first {
+  fill: #F7693E;
+}
+
+body .main-wrapper .workings .works-wrapper div p .second {
+  fill: #45B385;
+}
+
+body .main-wrapper .workings .works-wrapper div p .third {
+  color: #FFD898;
+}
+
+body .main-wrapper .workings .works-wrapper div h2 {
+  color: #2E0838;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
