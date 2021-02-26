@@ -16,24 +16,21 @@ body {
   background-repeat: no-repeat;
   background-size: 130vh, 20vw;
   background-position: 55vw -20vh, -5vw 140vh;
+  /*Navigation menu*/
+  /*main container wrapper*/
 }
 
 body .navbar {
   margin-top: 20px;
   padding: 0 5%;
-}
-
-body .navbar button {
-  color: #2E0838 !important;
-}
-
-body .navbar a {
-  color: #2E0838;
+  /*Company's name*/
+  /*Sub menu when on mobile devices*/
 }
 
 body .navbar .navbar-brand {
   font-size: 35px;
   font-weight: 600;
+  color: #2E0838;
   position: relative;
   transition-property: all;
   transition-duration: 1s;
@@ -64,9 +61,15 @@ body .navbar .collapse ul li .nav-link:hover, body .navbar .collapse ul li .nav-
   color: white;
 }
 
+body .main-wrapper {
+  /*Legend section*/
+}
+
 body .main-wrapper .legend {
   height: 80vh;
   margin: 5%;
+  /*Introductory message*/
+  /*Introductory Image*/
 }
 
 body .main-wrapper .legend .left-section {
@@ -167,6 +170,10 @@ body .main-wrapper .partners {
   text-align: center;
 }
 
+body .main-wrapper .partners .content {
+  /*Partners images*/
+}
+
 body .main-wrapper .partners .content p {
   color: #F7693E;
   font-size: 24px;
@@ -204,6 +211,8 @@ body .main-wrapper .partners .content .sponsors-images img:focus, body .main-wra
 
 body .main-wrapper .services {
   padding: 5%;
+  /*service image */
+  /*Service message*/
 }
 
 body .main-wrapper .services .left-section {
@@ -401,6 +410,8 @@ body .main-wrapper .tools p a:hover, body .main-wrapper .tools p a:focus {
 
 body .main-wrapper .special {
   padding: 5%;
+  /*Special services image*/
+  /*special services message*/
 }
 
 body .main-wrapper .special .left-section {

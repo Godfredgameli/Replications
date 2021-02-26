@@ -6,6 +6,7 @@ $headings: #2E0838;
 $size: 24px;
 $color: #979797;
 
+
 *{
     margin: 0;
     padding: 0;
@@ -23,30 +24,29 @@ body{
     background-repeat: no-repeat;
     background-size: 130vh, 20vw;
     background-position: 55vw -20vh, -5vw 140vh;
+
+    /*Navigation menu*/
     .navbar{
         margin-top: 20px;
         padding: 0 5%;
-        button{
-            color: $headings !important; 
-
-        }
-        a{
-            color: $headings;
-        }
+        
+        /*Company's name*/
         .navbar-brand{
             font-size: 35px;
             font-weight: $bold;
+            color: $headings;
             position: relative;
             transition-property: all;
             transition-duration: 1s;
             transition-timing-function: ease-out;
 
+            //hover and focus effects
             &:hover, &:focus{
                 filter: opacity(0.7);
                 transform: scale(1.5);
             }
         }
-
+        /*Sub menu when on mobile devices*/
         .collapse{
             justify-content: flex-end;
             ul{
@@ -59,7 +59,8 @@ body{
                         transition-duration: 1s;
                         transition-timing-function: ease-out;
                         color: $headings;
-
+                        
+                        //hover and focus effects
                         &:hover, &:focus, &:active{
                             background-color: $orange;
                             color: white;
@@ -69,12 +70,14 @@ body{
             }
         }
     }
+    /*main container wrapper*/
     .main-wrapper{
+        /*Legend section*/
         .legend{
             height: 80vh;
             margin: 5%;
+            /*Introductory message*/
             .left-section{
-                // padding: 50px 0;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -106,6 +109,7 @@ body{
                         transition-duration: 1s;
                         transition-timing-function: ease-out;
 
+                        //hover and focus effects
                         &:hover, &:focus{
                             text-decoration: none;
                             bottom: 5px;
@@ -115,6 +119,7 @@ body{
                 }
 
             }
+            /*Introductory Image*/
             .right-section{
                 display: flex;
                 justify-content: flex-end;
@@ -132,10 +137,12 @@ body{
                     padding-top:56.25%;
                     transition-property: all;
                     transition-duration: 1s;
+                    //Entrance animation
                     animation-name: slide-in;
                     animation-duration: 1.5s;
                     animation-timing-function: ease-out;
                     
+                    //hover and focus effects
                         &:focus, &:hover{
                             transform: scale(1.1);
                         }
@@ -147,6 +154,7 @@ body{
                         image-rendering: optimizeSpeed;
                     }
                 }
+                //entrance animation
                 @keyframes slide-in {
                     0%{right: -50%;};
                     100%{right: 0;};
@@ -174,6 +182,7 @@ body{
                     background-position: 49% 25px;
                     background-size: 80px;
                 }
+                /*Partners images*/
                 .sponsors-images{
                     display: flex;
                     justify-content: space-evenly;
@@ -185,6 +194,7 @@ body{
                         transition-property: all;
                         transition-duration: 1s;
                         
+                        //hover and focus effects
                             &:focus, &:hover{
                                 transform: scale(1.1);
                             }
@@ -194,6 +204,7 @@ body{
         }
         .services{
             padding: 5%;
+            /*service image */
             .left-section{
                 display: flex;
                 flex-direction: column;
@@ -205,19 +216,23 @@ body{
                     position: relative;
                     transition-property: all;
                     transition-duration: 1s;
+                    //Entry animation
                     animation-name: slide-right;
                     animation-duration: 1.5s;
                     animation-timing-function: ease-out;
                     
+                    //hover and focus effects
                         &:focus, &:hover{
                             transform: scale(1.1);
                         }
                 }
+                //Entry animation
                 @keyframes slide-right {
                     0%{left: -50%;};
                     100%{left: 0;};
                 }
             }
+            /*Service message*/
             .right-section{
                 display: flex;
                 flex-direction: column;
@@ -235,6 +250,7 @@ body{
                         transition-duration: 1s;
                         transition-timing-function: ease-out;
 
+                        //hover and focus effects
                         &:hover, &:focus{
                             filter: opacity(0.7);
                             text-decoration: none;
@@ -287,7 +303,8 @@ body{
                     padding: 40px 20px 150px 20px;
                     transition-property: all;
                     transition-duration: 1s;
-                    
+
+                    //hover and focus effects
                         &:focus, &:hover{
                             transform: scale(1.1);
                         }
@@ -336,7 +353,7 @@ body{
                     width: 15%;
                     transition-property: all;
                     transition-duration: 1s;
-                    
+                        //hover and focus effects
                         &:focus, &:hover{
                             transform: scale(1.1);
                         }
@@ -353,7 +370,7 @@ body{
                 a{
                     text-decoration: underline;
                     color: #0062FF;
-
+                    //hover and focus effects
                     &:hover, &:focus{
                         filter: opacity(0.7);
                     }
@@ -362,6 +379,7 @@ body{
         }
         .special{
             padding: 5%;
+            /*Special services image*/
             .left-section{
                 display: flex;
                 align-content: center;
@@ -374,12 +392,13 @@ body{
                     animation-name: slide-right;
                     animation-duration: 1.5s;
                     animation-timing-function: ease-out;
-                    
+                        //hover and focus effects
                         &:focus, &:hover{
                             transform: scale(1.1);
                         }
                 }
             }
+            /*special services message*/
             .right-section{
                 display: flex;
                 flex-direction: column;
@@ -420,7 +439,7 @@ body{
                     transition-property: all;
                     transition-duration: 1s;
                     transition-timing-function: ease-out;
-
+                    //hover and focus effects
                     &:hover, &:focus{
                         filter: opacity(0.7);
                         text-decoration: none;
