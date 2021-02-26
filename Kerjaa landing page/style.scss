@@ -11,7 +11,7 @@ $color: #979797;
     padding: 0;
     box-sizing: border-box;
     resize: both;
-    // outline: 1px solid red;
+    outline: 1px solid red;
 }
 body{
     font-size: $size;
@@ -60,11 +60,11 @@ body{
                             transition-property: all;
                             transition-duration: 1s;
                             transition-timing-function: ease-out;
+                            color: $headings;
 
                             &:hover, &:focus, &:active{
                                 background-color: $orange;
                                 color: white;
-                                bottom: 5px;
                             }
                         }
                     }
@@ -96,7 +96,7 @@ body{
                 .link{
                     height: max-content;
                     a{
-                        padding: 20px 8%;
+                        padding: 20px 7%;
                         background-color: $orange;
                         border-radius: 10px;
                         color: white;
@@ -132,6 +132,7 @@ body{
                     padding-top:56.25%;
                     img{
                         position: absolute;
+                        max-width: 100%;
                         width: 100%;
                         height: auto;
                         image-rendering: optimizeSpeed;
@@ -373,4 +374,127 @@ body{
     }
 }
 
+
+/*Responsiveness*/
+@media screen and (max-width: 767px){
+    body{
+        font-size: 16px;
+        .main-wrapper{
+            height: 100%;
+            .navbar{
+                padding: 0;
+                .navbar-brand{
+                    margin-left: 20px;
+                }
+                button{
+                    margin-right: 20px;
+                }
+                .collapse{
+                    background-color:#f8f8ff;
+                    ul{
+                        li{
+                            .nav-link{
+                                color: $headings;
+                            }
+                        }
+                        }
+                    }
+            }
+            .legend{
+                height: 180vh;
+                padding: 0 !important;
+                .left-section{
+                    text-align: center;
+                    height: 30%;
+                    h1{
+                        font-size: 32px;
+                        width: 100%;
+                    }
+                    .description{
+                        width: 100%;
+                    }
+                    .link{
+                        a{
+                            padding: 10px 10%;
+                        }
+                    }
+                }
+                .right-section{
+                    height: 70%;
+                    justify-content: center;
+                    .image-wrapper{
+                        width: 100%;
+                    }
+                }
+            }
+            .services{
+                text-align: center;
+                height: 150vh;
+                padding: 5% 0;
+                .left-section{
+                    height: 60%;
+                    align-items: center;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .right-section{
+                    height: 40%;
+                    .intro{
+                        margin: 20px 0;
+                    }
+                    h2{
+                        width: 100%;
+                        font-size: 24px;
+                        margin-bottom: 0;
+                    }
+                    .service-description{
+                        margin: 20px 0;
+                    }
+                    .link-text{
+                        margin-top: 0;
+                        a{
+                            padding: 10px 10%;
+                        }
+                    }
+                }
+            }
+            .workings{
+                padding: 5% 0;
+                header{
+                    margin-bottom: 50px;
+                    h2{
+                        font-size: 24px;
+                    }
+                }
+                .works-wrapper{
+                    div{
+                        width: 100%;
+                        padding: 30px 20px 50px 20px;
+                    }
+                }
+            }
+            .tools{
+                padding: 5% 0;
+                header{
+                    .heading{
+                        font-size: 24px;
+                        width: 100%;
+                    }
+                }
+                .tools-wrapper{
+                    justify-content: space-evenly;
+                    div{
+                        margin-bottom: 20px;
+                        width: 45%;
+                        img{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
 
