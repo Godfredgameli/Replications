@@ -11,7 +11,7 @@ $color: #979797;
     padding: 0;
     box-sizing: border-box;
     resize: both;
-    outline: 1px solid red;
+    // outline: 1px solid red;
 }
 body{
     font-size: $size;
@@ -19,62 +19,62 @@ body{
     overflow-x: hidden;
     font-family: $font;
     background-color: white;
-    background: url(images/background.png);
+    background: url(images/background.png), url(images/back-small.png);
     background-repeat: no-repeat;
-    background-size: 130vh;
-    background-position: 55vw -20vh;
-    .main-wrapper{
-        .navbar{
-            height: 70px;
-            padding: 0 5%;
-            button{
-                color: $headings !important; 
+    background-size: 130vh, 20vw;
+    background-position: 55vw -20vh, -5vw 140vh;
+    .navbar{
+        margin-top: 20px;
+        padding: 0 5%;
+        button{
+            color: $headings !important; 
 
+        }
+        a{
+            color: $headings;
+        }
+        .navbar-brand{
+            font-size: 35px;
+            font-weight: $bold;
+            position: relative;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+
+            &:hover, &:focus{
+                filter: opacity(0.7);
+                transform: scale(1.5);
             }
-            a{
-                color: $headings;
-                font-weight: $bold;
-            }
-            .navbar-brand{
-                font-size: 35px;
-                font-weight: $bold;
-                position: relative;
-                transition-property: all;
-                transition-duration: 1s;
-                transition-timing-function: ease-out;
+        }
 
-                &:hover, &:focus{
-                    filter: opacity(0.7);
-                    transform: scale(1.5);
-                }
-            }
+        .collapse{
+            justify-content: flex-end;
+            ul{
+                li{
+                    .nav-link{
+                        padding: 10px 5vw;
+                        border-radius: 10px;
+                        position: relative;
+                        transition-property: all;
+                        transition-duration: 1s;
+                        transition-timing-function: ease-out;
+                        color: $headings;
 
-            .collapse{
-                justify-content: flex-end;
-                ul{
-                    li{
-                        .nav-link{
-                            padding: 10px 5vw;
-                            border-radius: 10px;
-                            position: relative;
-                            transition-property: all;
-                            transition-duration: 1s;
-                            transition-timing-function: ease-out;
-                            color: $headings;
-
-                            &:hover, &:focus, &:active{
-                                background-color: $orange;
-                                color: white;
-                            }
+                        &:hover, &:focus, &:active{
+                            background-color: $orange;
+                            color: white;
                         }
                     }
                 }
             }
         }
+    }
+    .main-wrapper{
         .legend{
             height: 80vh;
             margin: 5%;
             .left-section{
+                // padding: 50px 0;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -95,6 +95,7 @@ body{
                 }
                 .link{
                     height: max-content;
+                    margin-top: 30px;
                     a{
                         padding: 20px 7%;
                         background-color: $orange;
@@ -107,7 +108,6 @@ body{
 
                         &:hover, &:focus{
                             text-decoration: none;
-                            filter: opacity(0.7);
                             bottom: 5px;
                             color: $headings;
                         }
@@ -132,6 +132,9 @@ body{
                     padding-top:56.25%;
                     transition-property: all;
                     transition-duration: 1s;
+                    animation-name: slide-in;
+                    animation-duration: 1.5s;
+                    animation-timing-function: ease-out;
                     
                         &:focus, &:hover{
                             transform: scale(1.1);
@@ -144,11 +147,16 @@ body{
                         image-rendering: optimizeSpeed;
                     }
                 }
+                @keyframes slide-in {
+                    0%{right: -50%;};
+                    100%{right: 0;};
+                }
             }
         }
         .partners{
             padding: 5%;
-            background-color: #FBFBFB;
+            background: linear-gradient(#FBFBFB, #FBFBFB);
+            background-blend-mode: lighten;
             text-align: center;
             .content{
                 p{
@@ -159,6 +167,12 @@ body{
                 h2{
                     color: $headings;
                     font-weight: $bold;
+                    margin-bottom: 100px;
+                    padding-bottom: 50px;
+                    background: url(images/Path1.png);
+                    background-repeat: no-repeat;
+                    background-position: 49% 25px;
+                    background-size: 80px;
                 }
                 .sponsors-images{
                     display: flex;
@@ -188,12 +202,20 @@ body{
                     max-width: 100%;
                     width: 80%;
                     height: auto;
+                    position: relative;
                     transition-property: all;
                     transition-duration: 1s;
+                    animation-name: slide-right;
+                    animation-duration: 1.5s;
+                    animation-timing-function: ease-out;
                     
                         &:focus, &:hover{
                             transform: scale(1.1);
                         }
+                }
+                @keyframes slide-right {
+                    0%{left: -50%;};
+                    100%{left: 0;};
                 }
             }
             .right-section{
@@ -262,7 +284,7 @@ body{
                 div{
                     width: 30%;
                     border-radius: 20px;
-                    padding: 40px 20px 100px 20px;
+                    padding: 40px 20px 150px 20px;
                     transition-property: all;
                     transition-duration: 1s;
                     
@@ -311,7 +333,7 @@ body{
                 flex-wrap: wrap;
 
                 div{
-                    width: 20%;
+                    width: 15%;
                     transition-property: all;
                     transition-duration: 1s;
                     
@@ -346,8 +368,12 @@ body{
                 img{
                     width: 90%;
                     height: auto;
+                    position: relative;
                     transition-property: all;
                     transition-duration: 1s;
+                    animation-name: slide-right;
+                    animation-duration: 1.5s;
+                    animation-timing-function: ease-out;
                     
                         &:focus, &:hover{
                             transform: scale(1.1);
@@ -415,27 +441,23 @@ body{
 @media screen and (max-width: 767px){
     body{
         font-size: 16px;
-        .main-wrapper{
-            height: 100%;
-            .navbar{
-                padding: 0;
-                .navbar-brand{
-                    margin-left: 20px;
-                }
-                button{
-                    margin-right: 20px;
-                }
-                .collapse{
-                    background-color:#f8f8ff;
-                    ul{
-                        li{
-                            .nav-link{
-                                color: $headings;
-                            }
-                        }
+        background-size: 70vw, 25vw;
+        background-position: 55vw -20vh, -5vw 250vh;
+        .navbar{
+            .collapse{
+                background-color: $orange;
+                ul{
+                    li{
+                        .nav-link{
+                            color: $headings;
+                            border-radius: 0px;
                         }
                     }
+                 }
             }
+        }
+        .main-wrapper{
+            height: 100%;
             .legend{
                 height: 180vh;
                 padding: 0 !important;
@@ -523,7 +545,7 @@ body{
                     justify-content: space-evenly;
                     div{
                         margin-bottom: 20px;
-                        width: 45%;
+                        width: 35%;
                         img{
                             margin-bottom: 0;
                         }
