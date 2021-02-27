@@ -495,6 +495,10 @@ body .main-wrapper .footer .attribution {
   margin-top: 100px;
 }
 
+body .main-wrapper .footer .attribution a {
+  color: greenyellow;
+}
+
 /*Responsiveness*/
 @media screen and (max-width: 767px) {
   body {
